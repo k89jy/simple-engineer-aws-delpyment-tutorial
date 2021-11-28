@@ -35,4 +35,4 @@ jobs:
           environment_name: Simpleengineerdelpoymenttutorial-env
 #           version_label: "simple-engineer-delpoyment-${{steps.format-time.outputs.replaced}}"
           region: ap-northeast-1
-          deployment_package: deploy.zip
+          deployment_package: deploy.zip 
