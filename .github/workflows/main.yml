@@ -27,7 +27,7 @@ jobs:
           flags:'g'
           
       - name: Deploy to EB
-        uses: k89jy/simple-engineer-aws-delpyment-tutorial@1
+        uses: k89jy/simple-engineer-aws-delpyment-tutorial@master
         with:
           aws_access_key: ${{secrets.AWS_ACCESS_KEY_ID}}
           aws_secret_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
