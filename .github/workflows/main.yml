@@ -14,7 +14,7 @@ jobs:
         run: zip -r deploy.zip * -x "**node_modules**"
           
       - name: Deploy to EB
-        uses: k89jy/simple-engineer-aws-delpyment-tutorial@master
+        uses: einaregilsson/beanstalk-deploy@v16
         env:
           eb_package_s3_bucket_name: "elb-node-server"
           aws_access_key: ${{secrets.AWS_ACCESS_KEY_ID}}
