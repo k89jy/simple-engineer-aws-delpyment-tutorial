@@ -15,7 +15,7 @@ jobs:
           
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v16
-        env:
+        with:
           eb_package_s3_bucket_name: "elb-node-server"
           aws_access_key: ${{secrets.AWS_ACCESS_KEY_ID}}
           aws_secret_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
