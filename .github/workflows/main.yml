@@ -5,16 +5,13 @@ on:
       - master
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout latest rep
         uses: actions/checkout@master
         
       - name: Generate Delpoyment Package
         run: zip -r deploy.zip * -x "**node_modules**"
-        
-      - name: Get timestamp
-        uses: gerred/actions/current-time@master
-        id: current-time
           
       - name: Deploy to EB
         uses: k89jy/simple-engineer-aws-delpyment-tutorial@master
